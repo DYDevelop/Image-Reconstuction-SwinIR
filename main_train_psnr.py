@@ -8,6 +8,7 @@ from collections import OrderedDict
 import logging
 from torch.utils.data import DataLoader
 from torch.utils.data.distributed import DistributedSampler
+from tqdm.auto import tqdm
 import torch
 
 from utils import utils_logger
@@ -17,7 +18,8 @@ from utils.utils_dist import get_dist_info, init_dist
 
 from data.select_dataset import define_Dataset
 from models.select_model import define_Model
-
+import warnings
+warnings.filterwarnings("ignore")
 
 '''
 # --------------------------------------------
@@ -158,6 +160,7 @@ def main(json_path='options/train_msrresnet_psnr.json'):
         logger.info(model.info_network())
         logger.info(model.info_params())
 
+
     '''
     # ----------------------------------------
     # Step--4 (main training)
@@ -168,7 +171,7 @@ def main(json_path='options/train_msrresnet_psnr.json'):
         if opt['dist']:
             train_sampler.set_epoch(epoch)
 
-        for i, train_data in enumerate(train_loader):
+        for i, train_data in tqdm(enumerate(train_loader), desc=f'EPOCH:{epoch}'):
 
             current_step += 1
 
@@ -193,6 +196,7 @@ def main(json_path='options/train_msrresnet_psnr.json'):
             if current_step % opt['train']['checkpoint_print'] == 0 and opt['rank'] == 0:
                 logs = model.current_log()  # such as loss
                 message = '<epoch:{:3d}, iter:{:8,d}, lr:{:.3e}> '.format(epoch, current_step, model.current_learning_rate())
+                print(message)
                 for k, v in logs.items():  # merge log information into message
                     message += '{:s}: {:.3e} '.format(k, v)
                 logger.info(message)
@@ -246,6 +250,7 @@ def main(json_path='options/train_msrresnet_psnr.json'):
 
                 # testing log
                 logger.info('<epoch:{:3d}, iter:{:8,d}, Average PSNR : {:<.2f}dB\n'.format(epoch, current_step, avg_psnr))
+                print('<epoch:{:3d}, iter:{:8,d}, Average PSNR : {:<.2f}dB\n'.format(epoch, current_step, avg_psnr))
 
 if __name__ == '__main__':
     main()

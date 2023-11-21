@@ -285,3 +285,5 @@ def test(img_lq, model, args, window_size):
 
 if __name__ == '__main__':
     main()
+
+# python main_test_swinir.py --task color_dn --noise 0 --model_path denoising/swinir_denoising_color_15/models/95000_G.pth --folder_gt testsets/plates
