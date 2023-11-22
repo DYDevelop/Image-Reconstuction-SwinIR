@@ -1,6 +1,6 @@
 ## Training and testing codes for SwinIR
 ----------
-- TestSet(Left)                 Transfer Leraning Iter 95000 (Right)
+- TestSet(Left) and Transfer Leraning Iter 95000 (Right)
 
 
 
