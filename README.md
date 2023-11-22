@@ -57,3 +57,6 @@ pages={1833--1844},
 year={2021}
 }
 ```
+Credits
+----------
+Our Swin Image Reconstruction implementation is heavily based on [Di Chen](https://github.com/cszn)'s [NAE](https://github.com/cszn/KAIR).<br>
