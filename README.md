@@ -1,8 +1,13 @@
 ## Training and testing codes for SwinIR
 ----------
 - TestSet(Left) and Transfer Leraning on Iter 95000 (Right)
-<img width="80%" src="https://github.com/DYDevelop/SwinIR/assets/55197580/5d835d9a-e21f-4f6c-a9dc-d57986c44aa4"/>
-
+<img width="100%" src="https://github.com/DYDevelop/SwinIR/assets/55197580/5d835d9a-e21f-4f6c-a9dc-d57986c44aa4"/>
+<img width="100%" src="https://github.com/DYDevelop/SwinIR/assets/55197580/23fa410a-2ddf-4af1-9ab9-464a38e0ed78"/>
+<img width="100%" src="https://github.com/DYDevelop/SwinIR/assets/55197580/3f13fc7f-cdb9-49f6-b207-7e905335cb98"/>
+<img width="100%" src="https://github.com/DYDevelop/SwinIR/assets/55197580/457cbe0b-2934-4c8c-a2b1-bc5319b9b830"/>
+<img width="100%" src="https://github.com/DYDevelop/SwinIR/assets/55197580/7fb7b526-5212-4e9b-8598-0575b90cdb9a"/>
+<img width="100%" src="https://github.com/DYDevelop/SwinIR/assets/55197580/8e7846fa-a837-4f32-8429-fdea145643a0"/>
+<img width="100%" src="https://github.com/DYDevelop/SwinIR/assets/55197580/742c705a-d0c4-489b-9565-c0968bcbfd75"/>
 
 Clone repo
 ----------
