@@ -1,7 +1,7 @@
 ## Training and testing codes for SwinIR
 ----------
 - TestSet(Left) and Transfer Leraning on Iter 95000 (Right)
-
+<img width="80%" src="https://github.com/DYDevelop/SwinIR/assets/55197580/5d835d9a-e21f-4f6c-a9dc-d57986c44aa4"/>
 
 
 Clone repo
