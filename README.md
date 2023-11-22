@@ -86,6 +86,7 @@ num_parameters = sum(map(lambda x: x.numel(), model.parameters()))
 logger.info('{:>16s} : {:<.4f} [M]'.format('#Params', num_parameters/10**6))
 ```
 
+
 - **News (2020-6)**: Add [USRNet (CVPR 2020)](https://github.com/cszn/USRNet) for training and testing.
   - [Network Architecture](https://github.com/cszn/KAIR/blob/3357aa0e54b81b1e26ceb1cee990f39add235e17/models/network_usrnet.py#L309)
   - [Dataset](https://github.com/cszn/KAIR/blob/6c852636d3715bb281637863822a42c72739122a/data/dataset_usrnet.py#L16)
@@ -114,49 +115,6 @@ setting ["dataroot_H": "trainsets/trainH"](https://github.com/cszn/KAIR/blob/ff8
 
 ```python
 python main_train_psnr.py --opt options/swinir/train_swinir_denoising_color.json
-```
-
-- Training with `DataParallel` - PSNR
-
-
-```python
-python main_train_psnr.py --opt options/train_msrresnet_psnr.json
-```
-
-- Training with `DataParallel` - GAN
-
-```python
-python main_train_gan.py --opt options/train_msrresnet_gan.json
-```
-
-- Training with `DistributedDataParallel` - PSNR - 4 GPUs
-
-```python
-python -m torch.distributed.launch --nproc_per_node=4 --master_port=1234 main_train_psnr.py --opt options/train_msrresnet_psnr.json  --dist True
-```
-
-- Training with `DistributedDataParallel` - PSNR - 8 GPUs
-
-```python
-python -m torch.distributed.launch --nproc_per_node=8 --master_port=1234 main_train_psnr.py --opt options/train_msrresnet_psnr.json  --dist True
-```
-
-- Training with `DistributedDataParallel` - GAN - 4 GPUs
-
-```python
-python -m torch.distributed.launch --nproc_per_node=4 --master_port=1234 main_train_gan.py --opt options/train_msrresnet_gan.json  --dist True
-```
-
-- Training with `DistributedDataParallel` - GAN - 8 GPUs
-
-```python
-python -m torch.distributed.launch --nproc_per_node=8 --master_port=1234 main_train_gan.py --opt options/train_msrresnet_gan.json  --dist True
-```
-
-- Kill distributed training processes of `main_train_gan.py`
-
-```python
-kill $(ps aux | grep main_train_gan.py | grep -v grep | awk '{print $2}')
 ```
 
 ----------
