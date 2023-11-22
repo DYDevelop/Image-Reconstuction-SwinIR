@@ -1,4 +1,8 @@
 ## Training and testing codes for SwinIR
+----------
+- TestSet  - Iter 95000
+
+
 
 Clone repo
 ----------
