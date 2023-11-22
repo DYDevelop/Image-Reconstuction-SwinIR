@@ -59,4 +59,4 @@ year={2021}
 ```
 Credits
 ----------
-Our Swin Image Reconstruction implementation is heavily based on [Di Chen](https://github.com/cszn)'s [NAE](https://github.com/cszn/KAIR).<br>
+Our Swin Image Reconstruction implementation is heavily based on [Kai Zhang](https://github.com/cszn)'s [KAIR](https://github.com/cszn/KAIR).<br>
