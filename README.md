@@ -37,26 +37,6 @@ python main_test_swinir.py --task color_dn --noise 0 --model_path denoising/swin
 ```
 
 
-----------
-| Method | Original Link |
-|---|---|
-| DnCNN |[https://github.com/cszn/DnCNN](https://github.com/cszn/DnCNN)|
-| FDnCNN |[https://github.com/cszn/DnCNN](https://github.com/cszn/DnCNN)|
-| FFDNet | [https://github.com/cszn/FFDNet](https://github.com/cszn/FFDNet)|
-| SRMD | [https://github.com/cszn/SRMD](https://github.com/cszn/SRMD)|
-| DPSR-SRResNet | [https://github.com/cszn/DPSR](https://github.com/cszn/DPSR)|
-| SRResNet | [https://github.com/xinntao/BasicSR](https://github.com/xinntao/BasicSR)|
-| ESRGAN | [https://github.com/xinntao/ESRGAN](https://github.com/xinntao/ESRGAN)|
-| RRDB | [https://github.com/xinntao/ESRGAN](https://github.com/xinntao/ESRGAN)|
-| IMDB | [https://github.com/Zheng222/IMDN](https://github.com/Zheng222/IMDN)|
-| USRNet | [https://github.com/cszn/USRNet](https://github.com/cszn/USRNet)|
-| DRUNet | [https://github.com/cszn/DPIR](https://github.com/cszn/DPIR)|
-| DPIR | [https://github.com/cszn/DPIR](https://github.com/cszn/DPIR)|
-| BSRGAN | [https://github.com/cszn/BSRGAN](https://github.com/cszn/BSRGAN)|
-| SwinIR | [https://github.com/JingyunLiang/SwinIR](https://github.com/JingyunLiang/SwinIR)|
-| VRT | [https://github.com/JingyunLiang/VRT](https://github.com/JingyunLiang/VRT)       |
-| DiffPIR | [https://github.com/yuanzhi-zhu/DiffPIR](https://github.com/yuanzhi-zhu/DiffPIR)|
-
 References
 ----------
 ```BibTex
