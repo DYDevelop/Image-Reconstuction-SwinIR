@@ -12,7 +12,7 @@
 Clone repo
 ----------
 ```
-[git clone https://github.com/cszn/KAIR.git](https://github.com/DYDevelop/SwinIR.git)
+https://github.com/DYDevelop/SwinIR.git
 ```
 ```
 pip install -r requirement.txt
