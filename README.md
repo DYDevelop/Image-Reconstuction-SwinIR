@@ -117,6 +117,18 @@ setting ["dataroot_H": "trainsets/trainH"](https://github.com/cszn/KAIR/blob/ff8
 python main_train_psnr.py --opt options/swinir/train_swinir_denoising_color.json
 ```
 
+
+Inference
+----------
+
+- Inference with `DataParallel` - SwinIR
+
+
+```python
+python main_test_swinir.py --task color_dn --noise 0 --model_path denoising/swinir_denoising_color_15/models/100000_G.pth --folder_gt testsets/custom_dataset
+```
+
+
 ----------
 | Method | Original Link |
 |---|---|
