@@ -121,7 +121,7 @@ python main_train_psnr.py --opt options/swinir/train_swinir_denoising_color.json
 Inference
 ----------
 
-- Inference with `DataParallel` - SwinIR
+- Inference on `DataParallel` - SwinIR
 
 
 ```python
